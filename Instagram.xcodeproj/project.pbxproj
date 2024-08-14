@@ -11,6 +11,7 @@
 		C1CF51DA2C6CE44B002A8C96 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1CF51D92C6CE44B002A8C96 /* ContentView.swift */; };
 		C1CF51DC2C6CE44C002A8C96 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C1CF51DB2C6CE44C002A8C96 /* Assets.xcassets */; };
 		C1CF51DF2C6CE44C002A8C96 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C1CF51DE2C6CE44C002A8C96 /* Preview Assets.xcassets */; };
+		C1CF51F22C6CEC55002A8C96 /* MainTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1CF51F12C6CEC55002A8C96 /* MainTabView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +20,7 @@
 		C1CF51D92C6CE44B002A8C96 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		C1CF51DB2C6CE44C002A8C96 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C1CF51DE2C6CE44C002A8C96 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		C1CF51F12C6CEC55002A8C96 /* MainTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,7 +53,11 @@
 		C1CF51D62C6CE44B002A8C96 /* Instagram */ = {
 			isa = PBXGroup;
 			children = (
-				C1CF51D72C6CE44B002A8C96 /* InstagramApp.swift */,
+				C1CF51E92C6CEB60002A8C96 /* App */,
+				C1CF51E82C6CEB5B002A8C96 /* Core */,
+				C1CF51E72C6CEB53002A8C96 /* Extensions */,
+				C1CF51E62C6CEB4E002A8C96 /* Models */,
+				C1CF51E52C6CEB4A002A8C96 /* Services */,
 				C1CF51D92C6CE44B002A8C96 /* ContentView.swift */,
 				C1CF51DB2C6CE44C002A8C96 /* Assets.xcassets */,
 				C1CF51DD2C6CE44C002A8C96 /* Preview Content */,
@@ -65,6 +71,99 @@
 				C1CF51DE2C6CE44C002A8C96 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		C1CF51E52C6CEB4A002A8C96 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		C1CF51E62C6CEB4E002A8C96 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		C1CF51E72C6CEB53002A8C96 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		C1CF51E82C6CEB5B002A8C96 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				C1CF51EA2C6CEB7B002A8C96 /* Authentication */,
+				C1CF51EB2C6CEB8C002A8C96 /* Feed */,
+				C1CF51EC2C6CEB90002A8C96 /* Profile */,
+				C1CF51ED2C6CEB96002A8C96 /* Root */,
+				C1CF51EE2C6CEB9D002A8C96 /* Search */,
+				C1CF51EF2C6CEBE6002A8C96 /* TapBar */,
+				C1CF51F02C6CEBEB002A8C96 /* UploadPosts */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		C1CF51E92C6CEB60002A8C96 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				C1CF51D72C6CE44B002A8C96 /* InstagramApp.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		C1CF51EA2C6CEB7B002A8C96 /* Authentication */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Authentication;
+			sourceTree = "<group>";
+		};
+		C1CF51EB2C6CEB8C002A8C96 /* Feed */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Feed;
+			sourceTree = "<group>";
+		};
+		C1CF51EC2C6CEB90002A8C96 /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Profile;
+			sourceTree = "<group>";
+		};
+		C1CF51ED2C6CEB96002A8C96 /* Root */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Root;
+			sourceTree = "<group>";
+		};
+		C1CF51EE2C6CEB9D002A8C96 /* Search */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Search;
+			sourceTree = "<group>";
+		};
+		C1CF51EF2C6CEBE6002A8C96 /* TapBar */ = {
+			isa = PBXGroup;
+			children = (
+				C1CF51F12C6CEC55002A8C96 /* MainTabView.swift */,
+			);
+			path = TapBar;
+			sourceTree = "<group>";
+		};
+		C1CF51F02C6CEBEB002A8C96 /* UploadPosts */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = UploadPosts;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -139,6 +238,7 @@
 			files = (
 				C1CF51DA2C6CE44B002A8C96 /* ContentView.swift in Sources */,
 				C1CF51D82C6CE44B002A8C96 /* InstagramApp.swift in Sources */,
+				C1CF51F22C6CEC55002A8C96 /* MainTabView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
