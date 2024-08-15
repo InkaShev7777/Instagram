@@ -18,6 +18,9 @@
 		C1CF51FB2C6DF148002A8C96 /* FeedCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1CF51FA2C6DF148002A8C96 /* FeedCell.swift */; };
 		C1CF51FD2C6DF918002A8C96 /* SearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1CF51FC2C6DF918002A8C96 /* SearchView.swift */; };
 		C1CF51FF2C6DFD83002A8C96 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1CF51FE2C6DFD83002A8C96 /* LoginView.swift */; };
+		C1CF52022C6E05A3002A8C96 /* AddEmailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1CF52012C6E05A3002A8C96 /* AddEmailView.swift */; };
+		C1CF52042C6E1351002A8C96 /* IGTextFieldModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1CF52032C6E1351002A8C96 /* IGTextFieldModifier.swift */; };
+		C1CF52062C6E142D002A8C96 /* AddUsernameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1CF52052C6E142D002A8C96 /* AddUsernameView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -33,6 +36,9 @@
 		C1CF51FA2C6DF148002A8C96 /* FeedCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedCell.swift; sourceTree = "<group>"; };
 		C1CF51FC2C6DF918002A8C96 /* SearchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchView.swift; sourceTree = "<group>"; };
 		C1CF51FE2C6DFD83002A8C96 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		C1CF52012C6E05A3002A8C96 /* AddEmailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddEmailView.swift; sourceTree = "<group>"; };
+		C1CF52032C6E1351002A8C96 /* IGTextFieldModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IGTextFieldModifier.swift; sourceTree = "<group>"; };
+		C1CF52052C6E142D002A8C96 /* AddUsernameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddUsernameView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -132,6 +138,7 @@
 		C1CF51EA2C6CEB7B002A8C96 /* Authentication */ = {
 			isa = PBXGroup;
 			children = (
+				C1CF52002C6E058F002A8C96 /* Registration */,
 				C1CF51FE2C6DFD83002A8C96 /* LoginView.swift */,
 			);
 			path = Authentication;
@@ -188,8 +195,18 @@
 			isa = PBXGroup;
 			children = (
 				C1CF51F62C6CF49D002A8C96 /* UserStatView.swift */,
+				C1CF52032C6E1351002A8C96 /* IGTextFieldModifier.swift */,
 			);
 			path = Components;
+			sourceTree = "<group>";
+		};
+		C1CF52002C6E058F002A8C96 /* Registration */ = {
+			isa = PBXGroup;
+			children = (
+				C1CF52012C6E05A3002A8C96 /* AddEmailView.swift */,
+				C1CF52052C6E142D002A8C96 /* AddUsernameView.swift */,
+			);
+			path = Registration;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -267,7 +284,10 @@
 				C1CF51DA2C6CE44B002A8C96 /* ContentView.swift in Sources */,
 				C1CF51FF2C6DFD83002A8C96 /* LoginView.swift in Sources */,
 				C1CF51D82C6CE44B002A8C96 /* InstagramApp.swift in Sources */,
+				C1CF52022C6E05A3002A8C96 /* AddEmailView.swift in Sources */,
 				C1CF51FD2C6DF918002A8C96 /* SearchView.swift in Sources */,
+				C1CF52042C6E1351002A8C96 /* IGTextFieldModifier.swift in Sources */,
+				C1CF52062C6E142D002A8C96 /* AddUsernameView.swift in Sources */,
 				C1CF51F72C6CF49D002A8C96 /* UserStatView.swift in Sources */,
 				C1CF51F92C6DF138002A8C96 /* FeedView.swift in Sources */,
 				C1CF51F22C6CEC55002A8C96 /* MainTabView.swift in Sources */,
