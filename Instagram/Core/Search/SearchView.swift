@@ -13,7 +13,7 @@ struct SearchView: View {
         NavigationStack {
             ScrollView {
                 LazyVStack(alignment: .leading, spacing: 12) {
-                    ForEach(0 ... 10, id: \.self) { user in
+                    ForEach(0 ... 5, id: \.self) { user in
                         HStack {
                             Image("owner-image-profile")
                                 .resizable()
