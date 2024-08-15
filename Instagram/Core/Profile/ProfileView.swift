@@ -76,6 +76,7 @@ struct ProfileView: View {
                         Image("cat")
                             .resizable()
                             .scaledToFill()
+                            .clipShape(Rectangle())
                     }
                 }
             }
