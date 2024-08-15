@@ -1,5 +1,5 @@
 //
-//  CreatePasswordView.swift
+//  CompleteSignUpView.swift
 //  Instagram
 //
 //  Created by Ilya Schevchenko on 15.08.2024.
@@ -7,34 +7,27 @@
 
 import SwiftUI
 
-struct CreatePasswordView: View {
-    @State private var password = ""
+struct CompleteSignUpView: View {
     @Environment(\.dismiss) var dismiss
-
+    
     var body: some View {
         VStack(spacing: 12) {
-            Text("Create password")
+            
+            Text("Welcome to Instagram, retr0")
                 .font(.title2)
                 .fontWeight(.bold)
                 .padding(.top)
+                .multilineTextAlignment(.center)
             
-            Text("Your password must be at last 6 characters in length.")
+            Text("Click below to complete registration and start using Instagram.")
                 .font(.footnote)
-                .foregroundStyle(.gray)
                 .multilineTextAlignment(.center)
                 .padding(.horizontal, 24)
             
-            
-            
-            SecureField("Password", text: $password)
-                .modifier(IGTextFieldModifier())
-                .padding(.top)
-            
-            NavigationLink {
-                CompleteSignUpView()
-                    .navigationBarBackButtonHidden()
+            Button {
+                print("Complete Sign Up")
             } label: {
-                Text("Next")
+                Text("Complete")
                     .font(.subheadline)
                     .fontWeight(.semibold)
                     .frame(width: 360, height: 44)
@@ -44,7 +37,6 @@ struct CreatePasswordView: View {
             }
             .padding(.vertical)
             
-            Spacer()
         }
         .toolbar {
             ToolbarItem(placement: .navigationBarLeading) {
@@ -59,5 +51,5 @@ struct CreatePasswordView: View {
 }
 
 #Preview {
-    CreatePasswordView()
+    CompleteSignUpView()
 }
