@@ -21,6 +21,7 @@
 		C1CF52022C6E05A3002A8C96 /* AddEmailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1CF52012C6E05A3002A8C96 /* AddEmailView.swift */; };
 		C1CF52042C6E1351002A8C96 /* IGTextFieldModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1CF52032C6E1351002A8C96 /* IGTextFieldModifier.swift */; };
 		C1CF52062C6E142D002A8C96 /* AddUsernameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1CF52052C6E142D002A8C96 /* AddUsernameView.swift */; };
+		C1CF52082C6E16EF002A8C96 /* CreatePasswordView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1CF52072C6E16EF002A8C96 /* CreatePasswordView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -39,6 +40,7 @@
 		C1CF52012C6E05A3002A8C96 /* AddEmailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddEmailView.swift; sourceTree = "<group>"; };
 		C1CF52032C6E1351002A8C96 /* IGTextFieldModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IGTextFieldModifier.swift; sourceTree = "<group>"; };
 		C1CF52052C6E142D002A8C96 /* AddUsernameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddUsernameView.swift; sourceTree = "<group>"; };
+		C1CF52072C6E16EF002A8C96 /* CreatePasswordView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreatePasswordView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -205,6 +207,7 @@
 			children = (
 				C1CF52012C6E05A3002A8C96 /* AddEmailView.swift */,
 				C1CF52052C6E142D002A8C96 /* AddUsernameView.swift */,
+				C1CF52072C6E16EF002A8C96 /* CreatePasswordView.swift */,
 			);
 			path = Registration;
 			sourceTree = "<group>";
@@ -291,6 +294,7 @@
 				C1CF51F72C6CF49D002A8C96 /* UserStatView.swift in Sources */,
 				C1CF51F92C6DF138002A8C96 /* FeedView.swift in Sources */,
 				C1CF51F22C6CEC55002A8C96 /* MainTabView.swift in Sources */,
+				C1CF52082C6E16EF002A8C96 /* CreatePasswordView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
