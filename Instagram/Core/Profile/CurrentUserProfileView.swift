@@ -15,8 +15,6 @@ struct CurrentUserProfileView: View {
         return Post.MOCK_POSTS.filter({ $0.user?.username == user.username})
     }
     
-    private let imageDimension: CGFloat = (UIScreen.main.bounds.width / 3) - 1
-    
     var body: some View {
         
         NavigationStack {
