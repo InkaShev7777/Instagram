@@ -56,6 +56,7 @@
 		C1CF52492C70E383002A8C96 /* FirebaseVertexAI-Preview in Frameworks */ = {isa = PBXBuildFile; productRef = C1CF52482C70E383002A8C96 /* FirebaseVertexAI-Preview */; };
 		C1CF524D2C70E571002A8C96 /* AuthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1CF524C2C70E571002A8C96 /* AuthService.swift */; };
 		C1CF52512C70E734002A8C96 /* ContentViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1CF52502C70E734002A8C96 /* ContentViewModel.swift */; };
+		C1CF52542C713752002A8C96 /* RegistrationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1CF52532C713752002A8C96 /* RegistrationViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -86,6 +87,7 @@
 		C1CF52192C70E267002A8C96 /* GoogleService-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "Instagram/GoogleService-Info.plist"; sourceTree = SOURCE_ROOT; };
 		C1CF524C2C70E571002A8C96 /* AuthService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthService.swift; sourceTree = "<group>"; };
 		C1CF52502C70E734002A8C96 /* ContentViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentViewModel.swift; sourceTree = "<group>"; };
+		C1CF52532C713752002A8C96 /* RegistrationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -210,6 +212,7 @@
 		C1CF51EA2C6CEB7B002A8C96 /* Authentication */ = {
 			isa = PBXGroup;
 			children = (
+				C1CF52522C713736002A8C96 /* ViewModel */,
 				C1CF524B2C70E55D002A8C96 /* Service */,
 				C1CF524A2C70E541002A8C96 /* View */,
 			);
@@ -319,6 +322,14 @@
 			isa = PBXGroup;
 			children = (
 				C1CF52502C70E734002A8C96 /* ContentViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		C1CF52522C713736002A8C96 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				C1CF52532C713752002A8C96 /* RegistrationViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -435,6 +446,7 @@
 				C1CF52122C70B24B002A8C96 /* PostGridView.swift in Sources */,
 				C1CF51FD2C6DF918002A8C96 /* SearchView.swift in Sources */,
 				C1CF52512C70E734002A8C96 /* ContentViewModel.swift in Sources */,
+				C1CF52542C713752002A8C96 /* RegistrationViewModel.swift in Sources */,
 				C1CF52182C70B97C002A8C96 /* UploadPostViewModel.swift in Sources */,
 				C1CF52142C70B42C002A8C96 /* ProfileHeaderView.swift in Sources */,
 				C1CF520A2C6E189F002A8C96 /* CompleteSignUpView.swift in Sources */,
