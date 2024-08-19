@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		C1327CE82C71E88500302E49 /* CurrentUsernameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1327CE72C71E88500302E49 /* CurrentUsernameView.swift */; };
 		C1327CEA2C7343FF00302E49 /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1327CE92C7343FF00302E49 /* LoginViewModel.swift */; };
+		C1327CEC2C739B6200302E49 /* UserService.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1327CEB2C739B6200302E49 /* UserService.swift */; };
+		C1327CF02C739C5E00302E49 /* SearchViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1327CEF2C739C5E00302E49 /* SearchViewModel.swift */; };
 		C1CF51D82C6CE44B002A8C96 /* InstagramApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1CF51D72C6CE44B002A8C96 /* InstagramApp.swift */; };
 		C1CF51DA2C6CE44B002A8C96 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1CF51D92C6CE44B002A8C96 /* ContentView.swift */; };
 		C1CF51DC2C6CE44C002A8C96 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C1CF51DB2C6CE44C002A8C96 /* Assets.xcassets */; };
@@ -64,6 +66,8 @@
 /* Begin PBXFileReference section */
 		C1327CE72C71E88500302E49 /* CurrentUsernameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrentUsernameView.swift; sourceTree = "<group>"; };
 		C1327CE92C7343FF00302E49 /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
+		C1327CEB2C739B6200302E49 /* UserService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserService.swift; sourceTree = "<group>"; };
+		C1327CEF2C739C5E00302E49 /* SearchViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewModel.swift; sourceTree = "<group>"; };
 		C1CF51D42C6CE44B002A8C96 /* Instagram.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Instagram.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C1CF51D72C6CE44B002A8C96 /* InstagramApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InstagramApp.swift; sourceTree = "<group>"; };
 		C1CF51D92C6CE44B002A8C96 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -128,6 +132,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		C1327CED2C739C3200302E49 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				C1327CEF2C739C5E00302E49 /* SearchViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		C1327CEE2C739C3D00302E49 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				C1CF51FC2C6DF918002A8C96 /* SearchView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		C1CF51CB2C6CE44B002A8C96 = {
 			isa = PBXGroup;
 			children = (
@@ -170,6 +190,7 @@
 		C1CF51E52C6CEB4A002A8C96 /* Services */ = {
 			isa = PBXGroup;
 			children = (
+				C1327CEB2C739B6200302E49 /* UserService.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -254,7 +275,8 @@
 		C1CF51EE2C6CEB9D002A8C96 /* Search */ = {
 			isa = PBXGroup;
 			children = (
-				C1CF51FC2C6DF918002A8C96 /* SearchView.swift */,
+				C1327CEE2C739C3D00302E49 /* View */,
+				C1327CED2C739C3200302E49 /* ViewModel */,
 			);
 			path = Search;
 			sourceTree = "<group>";
@@ -441,6 +463,7 @@
 			files = (
 				C1CF51FB2C6DF148002A8C96 /* FeedCell.swift in Sources */,
 				C1CF52162C70B5C2002A8C96 /* UploadPostView.swift in Sources */,
+				C1327CEC2C739B6200302E49 /* UserService.swift in Sources */,
 				C1CF51F42C6CEEE8002A8C96 /* ProfileView.swift in Sources */,
 				C1CF51DA2C6CE44B002A8C96 /* ContentView.swift in Sources */,
 				C1CF51FF2C6DFD83002A8C96 /* LoginView.swift in Sources */,
@@ -460,6 +483,7 @@
 				C1CF520A2C6E189F002A8C96 /* CompleteSignUpView.swift in Sources */,
 				C1CF520C2C6E1B44002A8C96 /* User.swift in Sources */,
 				C1CF52042C6E1351002A8C96 /* IGTextFieldModifier.swift in Sources */,
+				C1327CF02C739C5E00302E49 /* SearchViewModel.swift in Sources */,
 				C1CF52062C6E142D002A8C96 /* AddUsernameView.swift in Sources */,
 				C1CF51F72C6CF49D002A8C96 /* UserStatView.swift in Sources */,
 				C1CF51F92C6DF138002A8C96 /* FeedView.swift in Sources */,

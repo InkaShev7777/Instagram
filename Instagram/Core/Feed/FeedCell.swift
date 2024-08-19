@@ -14,7 +14,7 @@ struct FeedCell: View {
             // image + username
             HStack {
                 if let user = post.user {
-                    Image(user.profileImageUrl ?? "")
+                    Image(user.profileImageUrl ?? "base-profile-2")
                         .resizable()
                         .scaledToFill()
                         .frame(width: 40, height: 40)

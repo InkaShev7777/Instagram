@@ -29,7 +29,7 @@ extension User {
         .init(
             id: NSUUID().uuidString,
             username: "tech_guru",
-            profileImageUrl: "base-profile",
+            profileImageUrl: "base-profile-2",
             fullname: "Olga Ivanova",
             bio: "Frontend Developer",
             email: "olga.ivanova@mail.com"
@@ -37,7 +37,7 @@ extension User {
         .init(
             id: NSUUID().uuidString,
             username: "coderlife",
-            profileImageUrl: "base-profile",
+            profileImageUrl: "base-profile-2",
             fullname: "Andrey Petrov",
             bio: "Backend Developer",
             email: "andrey.petroff@gmail.com"
@@ -45,7 +45,7 @@ extension User {
         .init(
             id: NSUUID().uuidString,
             username: "design_pro",
-            profileImageUrl: "base-profile",
+            profileImageUrl: "base-profile-2",
             fullname: "Marina Sokolova",
             bio: "UI/UX Designer",
             email: "marina.soko@mail.com"
@@ -53,7 +53,7 @@ extension User {
         .init(
             id: NSUUID().uuidString,
             username: "data_wiz",
-            profileImageUrl: "base-profile",
+            profileImageUrl: "base-profile-2",
             fullname: "Dmitry Kuznetsov",
             bio: "Data Scientist",
             email: "dmitry.kuznetsov@example.com"
@@ -61,7 +61,7 @@ extension User {
         .init(
             id: NSUUID().uuidString,
             username: "dev_ops_master",
-            profileImageUrl: "base-profile",
+            profileImageUrl: "base-profile-2",
             fullname: "Elena Smirnova",
             bio: "DevOps Engineer",
             email: "elena.smirnova@devops.com"
