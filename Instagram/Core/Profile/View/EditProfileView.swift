@@ -10,9 +10,8 @@ import PhotosUI
 
 struct EditProfileView: View {
     @Environment(\.dismiss) var dismiss
-    @State private var selectedImage: PhotosPickerItem?
-    @State private var name = ""
-    @State private var bio = ""
+
+    @StateObject var viewModel = EditProfileViewModel()
     
     var body: some View {
         VStack {
@@ -47,12 +46,19 @@ struct EditProfileView: View {
             
             
             // edit profile pic
-            PhotosPicker(selection: $selectedImage) {
+            PhotosPicker(selection: $viewModel.selectedImage) {
                 VStack {
-                    Image("base-profile-2")
-                        .resizable()
-                        .frame(width: 80, height: 80)
-                        .clipShape(Circle())
+                    if let image = viewModel.profileImage {
+                        image
+                            .resizable()
+                            .frame(width: 80, height: 80)
+                            .clipShape(Circle())
+                    } else {
+                        Image("base-profile-2")
+                            .resizable()
+                            .frame(width: 80, height: 80)
+                            .clipShape(Circle())
+                    }
                     
                     Text("Edit profile picture")
                         .font(.footnote)
@@ -66,9 +72,9 @@ struct EditProfileView: View {
             //edit profile name, bio (info)
             
             VStack{
-                EditProfileRowView(title: "Name", placeholder: "Enter your name...", text: $name)
+                EditProfileRowView(title: "Name", placeholder: "Enter your name...", text: $viewModel.fulname)
                 
-                EditProfileRowView(title: "Bio", placeholder: "Enter your bio...", text: $bio)
+                EditProfileRowView(title: "Bio", placeholder: "Enter your bio...", text: $viewModel.bio)
             }
             
             Spacer()
