@@ -15,8 +15,6 @@ struct CurrentUserProfileView: View {
         return Post.MOCK_POSTS.filter({ $0.user?.username == user.username})
     }
     
-    private let imageDimension: CGFloat = (UIScreen.main.bounds.width / 3) - 1
-    
     var body: some View {
         
         NavigationStack {
@@ -27,12 +25,15 @@ struct CurrentUserProfileView: View {
                 
                 PostGridView(posts: posts)
             }
-            .navigationTitle("Profile")
-            .navigationBarTitleDisplayMode(.inline)
             .toolbar {
+                ToolbarItem(placement: .navigationBarLeading) {
+                    CurrentUsernameView(username: user.username)
+                        .padding(.leading, 4)
+                }
+                
                 ToolbarItem(placement: .navigationBarTrailing) {
                     Button{
-                        
+                        AuthService.shared.signout()
                     } label: {
                         Image(systemName: "line.3.horizontal")
                             .foregroundStyle(Color(.black))

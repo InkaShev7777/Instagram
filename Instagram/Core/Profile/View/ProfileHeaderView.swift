@@ -10,16 +10,13 @@ import SwiftUI
 struct ProfileHeaderView: View {
     
     let user: User
+    @State private var showEditProfile = false
     
     var body: some View {
         VStack(spacing: 10) {
             // pic and stats
             HStack {
-                Image(user.profileImageUrl ?? "")
-                    .resizable()
-                    .scaledToFit()
-                    .frame(width: 80, height: 80)
-                    .clipShape(Circle())
+                CircularProfileImageView(user: user, size: .large)
                 
                 Spacer()
                 
@@ -53,17 +50,27 @@ struct ProfileHeaderView: View {
             // action button
             
             Button {
-                print("Edit profile button")
+                if user.isCurrentUser {
+                    showEditProfile.toggle()
+                } else {
+                    print("DEBUG: follow user")
+                }
+                
             } label: {
-                Text("Edit profile")
+                Text(user.isCurrentUser ? "Edit profile" : "Follow")
                     .font(.subheadline)
                     .fontWeight(.semibold)
                     .frame(width: 360, height: 32)
-                    .foregroundStyle(Color(.black))
-                    .overlay(RoundedRectangle(cornerRadius: 6) .stroke(Color.gray, lineWidth: /*@START_MENU_TOKEN@*/1.0/*@END_MENU_TOKEN@*/))
+                    .background(user.isCurrentUser ? Color(.white) : Color(.systemBlue))
+                    .cornerRadius(6)
+                    .foregroundStyle(user.isCurrentUser ? .black : .white)
+                    .overlay(RoundedRectangle(cornerRadius: 6) .stroke(user.isCurrentUser ? .gray : .clear, lineWidth: /*@START_MENU_TOKEN@*/1.0/*@END_MENU_TOKEN@*/))
             }
             
             Divider()
+        }
+        .fullScreenCover(isPresented: $showEditProfile) {
+            EditProfileView(user: user)
         }
     }
 }
