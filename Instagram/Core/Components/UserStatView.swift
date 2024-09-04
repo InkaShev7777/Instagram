@@ -12,7 +12,7 @@ struct UserStatView: View {
     let title: String
     var body: some View {
         VStack {
-            Text("\(value   )")
+            Text("\(value)")
                 .font(.subheadline)
                 .fontWeight(.semibold)
             

@@ -25,12 +25,15 @@ struct CurrentUserProfileView: View {
                 
                 PostGridView(posts: posts)
             }
-            .navigationTitle("Profile")
-            .navigationBarTitleDisplayMode(.inline)
             .toolbar {
+                ToolbarItem(placement: .navigationBarLeading) {
+                    CurrentUsernameView(username: user.username)
+                        .padding(.leading, 4)
+                }
+                
                 ToolbarItem(placement: .navigationBarTrailing) {
                     Button{
-                        
+                        AuthService.shared.signout()
                     } label: {
                         Image(systemName: "line.3.horizontal")
                             .foregroundStyle(Color(.black))

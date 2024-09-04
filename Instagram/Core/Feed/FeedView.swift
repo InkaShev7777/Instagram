@@ -18,22 +18,36 @@ struct FeedView: View {
                 }
                 .padding(.top, 8)
             }
-            .navigationTitle("Feed")
-            .navigationBarTitleDisplayMode(.inline)
             .toolbar {
+                // logo
                 ToolbarItem(placement: .navigationBarLeading) {
                     Image("instagram-logo")
                         .resizable()
-                        .frame(width: /*@START_MENU_TOKEN@*/100/*@END_MENU_TOKEN@*/, height: 32)
+                        .frame(width: 140, height: 45)
                 }
-                
+                // butons
                 ToolbarItem(placement: .navigationBarTrailing) {
-                    Button {
+                    
+                    HStack {
+                        Button {
+                            // action
+                        } label: {
+                            
+                            Image(systemName: "heart")
+                                .foregroundStyle(.black)
+                                .imageScale(.large)
+                                .fontWeight(.semibold)
+                        }
                         
-                    } label: {
-                        Image(systemName: "paperplane")
-                            .foregroundStyle(.black)
-                            .imageScale(.large)
+                        Button {
+                            // action
+                        } label: {
+                            Image(systemName: "message")
+                            //Image(systemName: "paperplane")
+                                .foregroundStyle(.black)
+                                .imageScale(.large)
+                                .fontWeight(.semibold)
+                        }
                     }
                 }
             }

@@ -1,5 +1,5 @@
 //
-//  AddEmailView.swift
+//  AddUsernameView.swift
 //  Instagram
 //
 //  Created by Ilya Schevchenko on 15.08.2024.
@@ -7,29 +7,31 @@
 
 import SwiftUI
 
-struct AddEmailView: View {
-    @State private var email = ""
+struct AddUsernameView: View {
+    @State private var username = ""
     @Environment(\.dismiss) var dismiss
+    @EnvironmentObject var viewModel: RegistrationViewModel
+    
     var body: some View {
         VStack(spacing: 12) {
-            Text("Add your email")
+            Text("Create username")
                 .font(.title2)
                 .fontWeight(.bold)
                 .padding(.top)
             
-            Text("You'll use this email to sign in to your account")
+            Text("Pick a username for your account. You can always change it.")
                 .font(.footnote)
                 .foregroundStyle(.gray)
                 .multilineTextAlignment(.center)
                 .padding(.horizontal, 24)
             
-            TextField("Email", text: $email)
+            TextField("Username", text: $viewModel.username)
                 .autocapitalization(.none)
                 .modifier(IGTextFieldModifier())
                 .padding(.top)
             
             NavigationLink {
-                AddUsernameView()
+                CreatePasswordView()
                     .navigationBarBackButtonHidden()
             } label: {
                 Text("Next")
@@ -57,5 +59,5 @@ struct AddEmailView: View {
 }
 
 #Preview {
-    AddEmailView()
+    AddUsernameView()
 }

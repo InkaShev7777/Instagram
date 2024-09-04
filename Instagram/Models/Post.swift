@@ -6,6 +6,7 @@
 //
 
 import Foundation
+import Firebase
 
 struct Post: Identifiable, Hashable, Codable {
     let id: String
@@ -13,7 +14,7 @@ struct Post: Identifiable, Hashable, Codable {
     let caption: String
     var likes: Int
     let imageUrl: String
-    let timestamp: Date
+    let timestamp: Timestamp
     var user: User?
 }
 
@@ -26,7 +27,7 @@ extension Post {
             caption: "This is some caption",
             likes: 10,
             imageUrl: "porsche-1",
-            timestamp: Date(),
+            timestamp: Timestamp(),
             user: User.MOCK_USER[0]
         ),
         .init(
@@ -35,7 +36,7 @@ extension Post {
             caption: "Enjoying the sunset by the beach",
             likes: 25,
             imageUrl: "cat",
-            timestamp: Date(),
+            timestamp: Timestamp(),
             user: User.MOCK_USER[1]
         ),
 
@@ -45,7 +46,7 @@ extension Post {
             caption: "A beautiful day in the mountains",
             likes: 40,
             imageUrl: "rs6-1",
-            timestamp: Date(),
+            timestamp: Timestamp(),
             user: User.MOCK_USER[2]
         ),
 
@@ -55,7 +56,7 @@ extension Post {
             caption: "Delicious homemade pizza",
             likes: 30,
             imageUrl: "bmw-xm",
-            timestamp: Date(),
+            timestamp: Timestamp(),
             user: User.MOCK_USER[3]
         ),
 
@@ -65,7 +66,7 @@ extension Post {
             caption: "Morning coffee vibes",
             likes: 18,
             imageUrl: "bmw-xm",
-            timestamp: Date(),
+            timestamp: Timestamp(),
             user: User.MOCK_USER[4]
         ),
 
@@ -75,7 +76,7 @@ extension Post {
             caption: "Exploring the city lights",
             likes: 55,
             imageUrl: "bmw-xm",
-            timestamp: Date(),
+            timestamp: Timestamp(),
             user: User.MOCK_USER[5]
         ),
 
@@ -85,7 +86,7 @@ extension Post {
             caption: "Chilling with the best company",
             likes: 33,
             imageUrl: "bmw-xm",
-            timestamp: Date(),
+            timestamp: Timestamp(),
             user: User.MOCK_USER[5]
         ),
 
@@ -95,7 +96,7 @@ extension Post {
             caption: "Adventure awaits",
             likes: 47,
             imageUrl: "bmw-xm",
-            timestamp: Date(),
+            timestamp: Timestamp(),
             user: User.MOCK_USER[4]
         )
 
