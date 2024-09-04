@@ -27,7 +27,7 @@ extension User {
         .init(
             id: NSUUID().uuidString,
             username: "retr0",
-            profileImageUrl: "owner-image-profile",
+            profileImageUrl: nil,
             fullname: "Ilya Shevchenko",
             bio: "IOS Developer",
             email: "inakshev777@gmail.com"
@@ -35,7 +35,7 @@ extension User {
         .init(
             id: NSUUID().uuidString,
             username: "tech_guru",
-            profileImageUrl: "base-profile-2",
+            profileImageUrl: nil,
             fullname: "Olga Ivanova",
             bio: "Frontend Developer",
             email: "olga.ivanova@mail.com"
@@ -43,7 +43,7 @@ extension User {
         .init(
             id: NSUUID().uuidString,
             username: "coderlife",
-            profileImageUrl: "base-profile-2",
+            profileImageUrl: nil,
             fullname: "Andrey Petrov",
             bio: "Backend Developer",
             email: "andrey.petroff@gmail.com"
@@ -51,7 +51,7 @@ extension User {
         .init(
             id: NSUUID().uuidString,
             username: "design_pro",
-            profileImageUrl: "base-profile-2",
+            profileImageUrl: nil,
             fullname: "Marina Sokolova",
             bio: "UI/UX Designer",
             email: "marina.soko@mail.com"
@@ -59,7 +59,7 @@ extension User {
         .init(
             id: NSUUID().uuidString,
             username: "data_wiz",
-            profileImageUrl: "base-profile-2",
+            profileImageUrl: nil,
             fullname: "Dmitry Kuznetsov",
             bio: "Data Scientist",
             email: "dmitry.kuznetsov@example.com"
@@ -67,7 +67,7 @@ extension User {
         .init(
             id: NSUUID().uuidString,
             username: "dev_ops_master",
-            profileImageUrl: "base-profile-2",
+            profileImageUrl: nil,
             fullname: "Elena Smirnova",
             bio: "DevOps Engineer",
             email: "elena.smirnova@devops.com"
